@@ -11,6 +11,7 @@ body {
   background-color: #e0e0e0;
 }
 
+/* Style Header */
 header {
   background-color: #2c0b09;
   color: #fff;
@@ -23,7 +24,6 @@ header {
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 16px;
-  /* background: url("/img/blingkici.jpg") lightgray 50% / cover no-repeat, rgba(255, 255, 255, 0.4); */
   background-blend-mode: soft-light, normal;
   box-shadow: 0px -4px 2px 0px rgba(0, 0, 0, 0.05) inset, 0px 4px 2px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 26px 0px rgba(255, 255, 255, 0.25) inset, 0px 40px 80px 0px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(0px);
@@ -41,6 +41,10 @@ nav ul {
   padding: 2px;
 }
 
+nav ul :hover {
+  color: #ff3d00;
+}
+
 li {
   list-style-type: none;
   padding: 10px;
@@ -52,8 +56,8 @@ a {
   text-decoration: none;
 }
 
-nav ul li :hover {
-  color: red;
+#home {
+  text-decoration: underline;
 }
 
 .btn-cta {
@@ -67,15 +71,17 @@ nav ul li :hover {
   color: #2c0b09;
   border-radius: 5px;
 }
+/* End Style Header */
 
-.container1 {
+/* Style Content Utama */
+article {
   display: flex;
   width: 100%;
   align-items: center;
   color: white;
   height: 75vh;
-  gap: 350px;
-  margin-top: 30px;
+  gap: 250px;
+  margin-top: 50px;
 }
 
 .content1 {
@@ -85,7 +91,6 @@ nav ul li :hover {
 .title {
   margin-bottom: 30px;
   font-size: 90px;
-  /* color: #84211d; */
   background: linear-gradient(90deg, #84211d 0%, #1e0807 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -111,20 +116,20 @@ nav ul li :hover {
 }
 
 .foto {
-  width: 400px;
-  height: 425px;
-  mix-blend-mode: multiply;
-  filter: brightness(100%);
-  margin-right: 40px;
+  width: 525px;
+  height: 500px;
+  margin-right: 0px;
 }
+/* End Style Content Utama */
 
-.container2 {
+/* Style Layanan Website Kami */
+section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 70px 0;
 }
 
-.h2 {
+.h3 {
   color: #fff;
   text-align: center;
   font-size: x-large;
@@ -182,8 +187,10 @@ nav ul li :hover {
   font-size: 13px;
   color: #fff;
 }
+/* End Style Layanan Website Kami */
 
-.container4 {
+/* Style Layanan Chat */
+.section1 {
   display: flex;
   gap: 300px;
   align-items: center;
@@ -197,7 +204,7 @@ nav ul li :hover {
   margin-left: 40px;
 }
 
-.kepala {
+.head {
   font-size: 40px;
   margin-bottom: 30px;
   color: #fff;
@@ -209,8 +216,10 @@ nav ul li :hover {
   mix-blend-mode: exclusion;
   filter: brightness(100%);
 }
+/* End Style Layanan Chat */
 
-.container5 {
+/* Style Contact */
+.section2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -220,7 +229,7 @@ nav ul li :hover {
   padding: 25px;
 }
 
-.h3 {
+.h4 {
   color: #fff;
   font-size: x-large;
 }
@@ -235,14 +244,10 @@ nav ul li :hover {
   mix-blend-mode: exclusion;
   filter: brightness(100%);
 }
+/* End Style Contact */
 
-.footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-.footer1 {
+/* Style Footer */
+footer {
   background-color: #2c0b09;
   background: linear-gradient(213deg, #86211d 17.43%, #1e1e1e 77.99%);
   display: flex;
@@ -252,7 +257,9 @@ nav ul li :hover {
   padding: 12px;
   font-size: 11px;
 }
+/* End Style Footer */
 
+/* Media Screen Device Hp */
 @media screen and (max-width: 768px) {
   header {
     width: 100%;
@@ -264,6 +271,7 @@ nav ul li :hover {
     justify-content: center;
     align-items: center;
   }
+
   .logo {
     display: flex;
     align-items: center;
@@ -272,10 +280,12 @@ nav ul li :hover {
     margin-right: 0px;
     margin-top: 10px;
   }
+
   .btn-cta {
     margin-bottom: 10px;
   }
-  .container1 {
+
+  article {
     width: 100%;
     height: auto;
     display: flex;
@@ -289,6 +299,7 @@ nav ul li :hover {
   .title {
     font-size: 30px;
   }
+
   .paragraf {
     font-size: 11px;
     width: 100%;
@@ -299,7 +310,8 @@ nav ul li :hover {
     height: 325px;
     margin-right: 0px;
   }
-  .h2 {
+
+  .h3 {
     margin: 0px 50px 0px 50px;
   }
 
@@ -308,33 +320,41 @@ nav ul li :hover {
     flex-direction: column;
     gap: 0px;
   }
+
   .card-item {
     width: 250px;
   }
-  .container4 {
+
+  .section1 {
     display: flex;
     flex-direction: column-reverse;
     gap: 10px;
     margin: 0px 0px 0px 0px;
     padding-bottom: 20px;
   }
+
   .content2 {
     margin: 10px 25px 0px 25px;
   }
-  .kepala {
+  .head {
     font-size: 25px;
   }
+
   .paragraf-1 {
     font-size: 12px;
   }
+
   .foto2 {
     width: 250px;
     height: 225px;
   }
-  .container5 {
+
+  .section2 {
     margin: 50px 0px 30px 0px;
   }
-  .footer1 {
+
+  footer {
     font-size: 7px;
   }
 }
+/* End Media Screen Device Hp */
